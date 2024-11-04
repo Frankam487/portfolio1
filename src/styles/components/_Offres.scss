@@ -1,0 +1,92 @@
+.offres {
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h4 {
+            color: $skyblue;
+
+        }
+
+        h1 {
+            color: $darkblue;
+            font-size: 1.7rem;
+            font-weight: 900;
+
+        }
+    }
+
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .item {
+            border: 1px solid rgba(0, 0, 0, 0.273);
+            border-radius: 0px 42px 0px 0px;
+            padding: 40px 32px;
+            margin: 10px;
+            position: relative;
+            margin: 30px;
+            transition: .7s ease;
+
+            h1 {
+                position: absolute;
+                top: -30px;
+                left: 46px;
+                z-index: 2;
+                color: rgb(255, 255, 255);
+
+            }
+
+            h3 {
+                color: $darkblue;
+                font-weight: 900;
+            }
+
+            &>* {
+                margin: 12px 0;
+            }
+
+            &:hover {
+                background: $skyblue;
+                color: $white;
+                transform: scale(1.07);
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                background-color: $skyblue;
+                border-radius: 16px;
+                font-size: 2rem;
+                color: white;
+                font-weight: 400;
+                height: 70px;
+                width: 70px;
+                top: -30px;
+                text-align: center;
+                justify-content: center;
+
+            }
+
+            &:hover::after {
+
+                background: $white;
+                font-size: 22rem;
+
+            }
+
+            p {
+                width: 300px;
+                height: 80px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+        }
+    }
+}

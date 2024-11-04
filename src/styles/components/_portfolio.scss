@@ -1,0 +1,112 @@
+.portfolio {
+    .text {
+        @include childCenter;
+        flex-direction: column;
+        margin: 40px 0;
+
+        h2 {
+            color: $skyblue;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            color: $darkblue;
+            font-weight: 900;
+            font-size: 1.6rem;
+        }
+    }
+
+    .menu {
+        width: 100%;
+        margin: 0 auto;
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+
+            @media (min-width: 900px) {
+
+                width: 40%;
+                margin: 0 auto;
+
+            }
+
+            li {
+
+                transition: .4s ease-in-out;
+
+                &:hover {
+                    cursor: pointer;
+                    border-bottom: 1px solid $skyblue;
+                    color: $skyblue;
+                }
+
+            }
+        }
+    }
+
+    .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+.card{
+    cursor: pointer;
+    position: relative;
+    transition: .5s ease;
+    &:hover {
+        opacity: .5;
+        h3,.btn1,.btn2{
+            opacity: 2;
+        }
+    }
+    h3{
+      opacity: 0;
+      
+      position: absolute;
+      left: 20%;
+      color: $whiteCasse;
+      font-weight: 900;
+      font-size: 1.3rem;   
+      top: 60%;
+    }
+    .btn1{
+            opacity: 0;
+            position: absolute;
+            left: 30%;
+            margin-left: 12px;
+           
+            top: 50%;
+        }
+        .btn2{
+            opacity: 0;
+           position: absolute;
+           left: 35%;
+           margin-left: 42px;
+        //    color: #fff;
+           top: 50%;
+        }
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $whiteCasse;
+            border-radius: 6px;
+            padding: 7px;
+            transition: .4s;
+            margin: -15px 0;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    
+}
+        img {
+            border-radius: 12px;
+            position: relative;
+            &:hover {
+                transform: rotate(0deg);
+                
+            }
+        }
+    }
+}

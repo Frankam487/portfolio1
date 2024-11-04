@@ -1,0 +1,22 @@
+.footer {
+    .parag {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: $white;
+
+        h2 {
+            color: cyan;
+            font-size: 1.7rem;
+            font-family: $font1;
+        }
+
+        span {
+            color: $white;
+            font-family: $font1;
+            font-size: 1.7rem;
+            margin-left: 12px;
+        }
+    }
+}

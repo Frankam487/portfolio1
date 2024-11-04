@@ -1,0 +1,180 @@
+.expertise {
+    margin-top: 120px;
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h4 {
+            color: $skyblue;
+            font-family: Arial;
+            font-size: 1.1rem;
+        }
+
+        h1 {
+            color: $darkblue;
+            font-family: Arial;
+            letter-spacing: .7px;
+            margin: 12px 0;
+        }
+    }
+
+    .technicalBar {
+        .bar {
+            margin: 9px auto;
+        }
+
+        width: 50%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .droite {
+            margin-left: 42px;
+        }
+
+        .bar {
+            .info {
+                margin-bottom: 5px;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+
+            .progress-line {
+                position: relative;
+                border-radius: 10px;
+                width: 100%;
+                height: 5px;
+                background: $darkblue;
+                animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+                transform: scaleX(0);
+                transform-origin: left;
+
+
+
+                span {
+                    position: absolute;
+                    animation: anim 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+                    background-color: $skyblue;
+                    transform-origin: left;
+                    transform: scaleX(0);
+
+                    &::after {
+                        position: absolute;
+                        background: $black;
+                        padding: 1px 8px;
+                        background: $skyblue;
+                        color: $white;
+                        font-size: 12px;
+                        border-radius: 3px;
+                        top: -28px;
+                        right: -20px;
+                        animation: showTexte 0.5s 1.5s linear forwards;
+                        opacity: 0;
+                    }
+
+
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        border: 7px solid transparent;
+                        right: 0;
+                        border-bottom-width: 0px;
+                        border-right-width: 0px;
+                        animation: showTexte 0.5s 1.5s linear forwards;
+                        border-top-color: $black;
+                        opacity: 0;
+                        top: -10px;
+
+                    }
+                }
+            }
+
+            .info {
+                span {
+
+                    font-size: 17px;
+                    font-weight: 500;
+                    animation: showText 0.5s 1s linear forwards;
+                }
+            }
+        }
+    }
+}
+
+.progress-line.trois {
+    span {
+        width: 78%;
+
+
+        &::after {
+            content: '78%';
+        }
+    }
+
+}
+
+
+.progress-line.deux {
+    span {
+        width: 22%;
+
+        &::after {
+            content: '22%';
+        }
+    }
+
+}
+
+.progress-line.quatre {
+    span {
+        width: 90%;
+
+        &::after {
+            content: '90%';
+        }
+    }
+
+
+}
+
+.progress-line.un {
+    span {
+        width: 12%;
+
+        &::after {
+            content: '12%';
+        }
+    }
+
+}
+
+.progress-line.cinq {
+    span {
+        width: 18%;
+
+        &::after {
+            content: '18%';
+        }
+    }
+
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes showTexte {
+    100% {
+        opacity: 1;
+    }
+}
