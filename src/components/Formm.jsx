@@ -6,21 +6,12 @@ import { useForm } from "react-hook-form";
 function Formm() {
 const form = useForm();
 const {register, control, handleSubmit, errors} = form;
-const data ={};
-const onSubmit = (e) => {
-  data = {
-    prenom: e.name,
-    nom: e.surname,
-    subject: e.subject,
-    message: e.textarea
-  }
-  axios.post("http://localhost:2001/user", data)
+
+const onSubmit = (data) => {
+ 
+  console.log(data)
 }
-  
-      
-    
-  
-  
+ 
   
   return (
     <>
@@ -32,18 +23,18 @@ const onSubmit = (e) => {
         </div>
         <div className="form-container ">
         
-          <div className="form-content" onSubmit={handleSubmit(onSubmit)}>
-          <form className="py-6 w-full rounded-sm ">
+          <div className="form-content" handleSubmit>
+          <form className="py-6 w-full rounded-sm" onSubmit={handleSubmit(onSubmit)}>
             <div className="flex justify-between gap-4 ">
               <div className="flex-1">
                 <input id="surname"
-                {...register("surname", {minLength: 5})}
+                {...register("surname")}
                   type="text"
                   
                   className="p-2 border border-gray-300 rounded w-full"
                   placeholder="Entrez votre prenom"
                 />
-                {errors && <p style={{color: 'red'}}>erreur</p>}
+       
               </div>
 
               <div className="flex-1">
@@ -74,12 +65,13 @@ const onSubmit = (e) => {
             ></textarea>
 
             <button
-              type="submit"
+              type="submit" onClick={(e) => handleClick(e)}
               className="mt-4 p-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-50"
             >
               Soumettre
             </button>
           </form>
+          
           </div>
           <div className="contact-container ">
             <div className=" m-2 flex items-center  ml-12">

@@ -8,7 +8,7 @@ function Footer() {
           H.
         </span>
         <p className="text-center my-4 text-cyan-50">
-          Pour plus d'informations, veuillez me contacter ou vous mes travaux via ces réseaux sociaux ...
+          Pour plus d'informations, veuillez me contacter ou voir mes travaux via ces réseaux sociaux ...
         </p>
         <div className="flex justify-around ">
           <a

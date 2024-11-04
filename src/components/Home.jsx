@@ -4,16 +4,16 @@
 
   export const Home = () => {
     
-    useEffect(() => {
-      let movee = document.querySelector(".movee");
+    // useEffect(() => {
+    //   let movee = document.querySelector(".movee");
       
       
-      window.addEventListener('mousemove', (e) => {
-        movee.style.left = e.pageX + "px";
-        movee.style.top = e.pageY + "px";
+    //   window.addEventListener('mousemove', (e) => {
+    //     movee.style.left = e.pageX + "px";
+    //     movee.style.top = e.pageY + "px";
 
-      }, [])
-    }, [])
+    //   }, [])
+    // }, [])
     return (
       <>
         <Icons />
