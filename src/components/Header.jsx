@@ -24,7 +24,7 @@ const Header = () => {
           <a href="#tes">Testimonial</a>
         </li>
         <li>
-          <a href="">Blog</a>
+          <a href="#formm">Blog</a>
         </li>
         
       </ul>

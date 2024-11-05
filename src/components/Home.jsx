@@ -1,19 +1,9 @@
   import { TypeAnimation } from "react-type-animation";
   import Icons from "./Icons";
-  import { useEffect } from "react";
 
   export const Home = () => {
     
-    // useEffect(() => {
-    //   let movee = document.querySelector(".movee");
-      
-      
-    //   window.addEventListener('mousemove', (e) => {
-    //     movee.style.left = e.pageX + "px";
-    //     movee.style.top = e.pageY + "px";
-
-    //   }, [])
-    // }, [])
+   
     return (
       <>
         <Icons />

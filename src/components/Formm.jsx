@@ -1,15 +1,20 @@
-import axios from "axios";
-import React, { useEffect } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 
-
 function Formm() {
-const form = useForm();
-const {register, control, handleSubmit, errors} = form;
 
-const onSubmit = (data) => {
+const [name, setName] = useState("");
+const [surName, setsurName] = useState("");
+const [subject, setsubject] = useState("");
+const [texta, settexta] = useState("");
+
+const handleSubmit = (e) => {
+e.preventDefault();
+ console.log(name);
  
-  console.log(data.name)
+ 
+  alert("Envoyé avec succès!")
+  
 }
  
   
@@ -23,12 +28,12 @@ const onSubmit = (data) => {
         </div>
         <div className="form-container ">
         
-          <div className="form-content" handleSubmit>
-          <form className="py-6 w-full rounded-sm" onSubmit={handleSubmit(onSubmit)}>
+          <div className="form-content">
+          <form className="py-6 w-full rounded-sm" onSubmit={handleSubmit}>
             <div className="flex justify-between gap-4 ">
               <div className="flex-1">
                 <input id="surname"
-                {...register("surname")}
+               
                   type="text"
                   
                   className="p-2 border border-gray-300 rounded w-full"
@@ -41,7 +46,7 @@ const onSubmit = (data) => {
                 <input
                   type="text"
                   id="name"
-                  {...register("name")}
+                  onChange={(e) => setName(e.target.value)}
                   className="p-2 border border-gray-300 rounded w-full"
                   placeholder="Entrez votre nom"
                 />
@@ -51,21 +56,21 @@ const onSubmit = (data) => {
             <input
               type="text"
               id="subject"
-              {...register("subject")}
+              onChange={(e) => setsubject(e.target.value)}
               className="p-2 my-2 border border-gray-300 rounded w-full"
               placeholder="Sujet"
             />
 
             <textarea
               id="textarea"
-              {...register("textarea")}
+            onChange={(e) => settexta(e.target.value)}
               className="p-2 my-2 border border-gray-300 rounded w-full"
               rows="4"
               placeholder="Message"
             ></textarea>
 
             <button
-              type="submit" onClick={(e) => handleClick(e)}
+              type="submit"
               className="mt-4 p-2 bg-blue-500 text-white rounded hover:bg-blue-600 w-50"
             >
               Soumettre
