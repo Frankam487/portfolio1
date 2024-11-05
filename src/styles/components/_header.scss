@@ -4,7 +4,7 @@
     display: grid;
     width: 100%;
     grid-template-columns: 10% 90%;
-    
+
     .logo {
         display: flex;
         align-items: center;
@@ -15,25 +15,27 @@
             font-weight: 900;
         }
     }
-@media screen and (max-width: 832px){
-    ul{
 
-        li {
-            display: block;
-            width: 20px;
-            height: 3px;
-            background: $black;
-            display: block;
-            margin: 20px auto;
-            
-        }
+    @media screen and (max-width: 832px) {
+        ul {}
     }
-}
+
     ul {
         @media screen and (max-width: 888px) {
-            display: none;
+            background-color: red;
+            display: block;
+            width: calc(60% - 20px);
+            @include childCenter;
+            flex-direction: column;
+            transform: translateX(600px);
 
-            
+            .li {
+                width: 30px;
+                background-color: rgb(0, 0, 0);
+                display: block;
+                height: 3px;
+                margin: 0 auto;
+            }
         }
 
 
@@ -82,5 +84,20 @@
         }
 
 
+    }
+
+    @media screen and (max-width: 888px) {
+        .burgerr {
+            margin-left: 600px;
+            margin-top: -100px;
+
+            .li {
+                width: 30px;
+                background-color: rgb(0, 0, 0);
+                display: block;
+                height: 3px;
+                margin: 4px;
+            }
+        }
     }
 }

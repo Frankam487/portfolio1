@@ -9,7 +9,7 @@ const {register, control, handleSubmit, errors} = form;
 
 const onSubmit = (data) => {
  
-  console.log(data)
+  console.log(data.name)
 }
  
   
@@ -83,7 +83,7 @@ const onSubmit = (data) => {
               <div className="flex flex-col ml-7 justify-start w-full">
                 <h3 className="font-bold font-arial">Call Me</h3>
                 <span className="text-start">690-461-830</span>
-                <span className="">677-331-000</span>
+                <span className="">673 98 32 15</span>
               </div>
             </div>
             <div className="email-container flex items-center  ml-12 ">

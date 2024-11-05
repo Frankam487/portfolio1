@@ -26,8 +26,13 @@ const Header = () => {
         <li>
           <a href="">Blog</a>
         </li>
+        
       </ul>
-     
+     <div className="burgerr">
+      <div className="li"></div>
+        <div className="li"></div>
+        <div className="li"></div>
+     </div>
     </div>
   );
 };
