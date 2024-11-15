@@ -21,7 +21,6 @@ e.preventDefault();
   return (
     <>
       <div className="form">
-
         <div className="text">
           <h2 className="text-blue-400 font-semibold">Me Contacter</h2>
           <h1 className="text-blue-900 font-extrabold text-3xl">Get in Touch</h1>
@@ -33,9 +32,7 @@ e.preventDefault();
             <div className="flex justify-between gap-4 ">
               <div className="flex-1">
                 <input id="surname"
-               
                   type="text"
-                  
                   className="p-2 border border-gray-300 rounded w-full"
                   placeholder="Entrez votre prenom"
                 />

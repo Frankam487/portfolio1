@@ -1,6 +1,7 @@
 .clients {
     background-color: $white;
-    padding: 0 12px;
+    // background-color: cyan;
+    padding: 12px;
 
     .first-text {
         @include childCenter;
