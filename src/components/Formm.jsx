@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useForm } from "react-hook-form";
+
 
 function Formm() {
 
@@ -10,11 +10,11 @@ const [texta, settexta] = useState("");
 
 const handleSubmit = (e) => {
 e.preventDefault();
- console.log(name);
- 
- 
-  alert("Envoyé avec succès!")
-  
+alert("Envoyé avec succès !");
+
+  setName(" ");
+  settexta(" ");
+  setsubject('')
 }
  
   
