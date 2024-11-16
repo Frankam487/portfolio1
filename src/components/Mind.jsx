@@ -1,10 +1,7 @@
 
 const Mind = () => {
    
-    const handleClick = () => {
-        console.log('click');
-        
-    }
+  
     return (
         <div className="mind">
             <div className="text">

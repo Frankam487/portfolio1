@@ -35,7 +35,6 @@ $black: black;
 }
 
 * {
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -51,8 +50,16 @@ a {
     text-decoration: none;
 }
 
+.formmm {
+    margin: 0 -250px;
+}
+
+.formmmE {
+    margin: 15px 211px;
+
+}
+
 body {
     background: rgb(210, 215, 216);
-    // background-color: red;
-
+    overflow-x: hidden;
 }

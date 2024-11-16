@@ -22,6 +22,11 @@
 
     ul {
         @media screen and (max-width: 888px) {
+            display: block;
+            width: calc(60% - 20px);
+            @include childCenter;
+            flex-direction: column;
+            transform: translateX(300px);
             display: none;
             
             .li {

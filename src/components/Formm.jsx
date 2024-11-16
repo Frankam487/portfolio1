@@ -75,8 +75,8 @@ alert("Envoyé avec succès !");
           </form>
           
           </div>
-          <div className="contact-container ">
-            <div className=" m-2 flex items-center  ml-12">
+          <div className="contact-container formmm">
+            <div className=" m-2 flex items-center  ml-12 formmm">
               <img
                 src="../../public/fr.jpg"
                 alt=""
@@ -88,7 +88,7 @@ alert("Envoyé avec succès !");
                 <span className="">673 98 32 15</span>
               </div>
             </div>
-            <div className="email-container flex items-center  ml-12 ">
+            <div className="email-container flex items-center  ml-12 formmmE">
               <img
                 src="."
                 alt=""
@@ -101,7 +101,7 @@ alert("Envoyé avec succès !");
                 <span className="text-start">fkamgang06@gmail.com</span>
               </div>
             </div>
-            <div className="flex items-center  m-3 ml-12 ">
+            <div className="flex items-center  m-3 ml-12 formmm">
               <img
                 src="."
                 alt=""
