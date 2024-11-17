@@ -21,7 +21,10 @@ $white: #fff;
 $darkblue: rgb(15, 35, 77);
 $whiteCasse: #dfdada;
 $black: black;
-
+html,
+body {
+    overflow-x: hidden;
+}
 @mixin childCenter {
     display: flex;
     justify-content: center;
@@ -61,5 +64,4 @@ a {
 
 body {
     background: rgb(210, 215, 216);
-    overflow-x: hidden;
 }
