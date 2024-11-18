@@ -1,5 +1,5 @@
 const Parcours = () => {
-  console.log('bb');
+ 
   
   return (
     <div className="parcours">
